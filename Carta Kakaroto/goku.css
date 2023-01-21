@@ -1,0 +1,377 @@
+body{
+    background-image: url(img/fondoBody.gif);
+    background-size: cover;
+    background-position: center;
+    
+}
+.goku{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.perspective{
+    perspective: 1000px;
+}
+.cartaFondo{
+    height: 700px;
+    width: 500px;
+    background-color: rgba(255, 0, 0, 0.781);
+    border-radius: 5%;
+    /*para que los elementos no salgan de la carta*/
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    box-shadow: 6px 6px 6px rgb(0, 0, 0);
+    cursor: pointer;
+}
+.cartaFondo:hover .descripcion {
+    background-color: gray;
+    background-image: linear-gradient(rgb(92, 92, 92), rgb(197, 22, 22));
+    color: white;
+
+}
+
+.cartaFondo::before{
+    content: "";
+    height: 680px;
+    width: 480px;
+    background-image: url(Img/cartaFondo.jpg);
+    background-size: cover;
+    border-radius: 5%;
+    position: absolute;
+    z-index: 1;
+    margin-left: 10px;
+}
+.perspective:hover .cartaFondo::before{
+    background-image: url(img/Fondo2.gif);
+    transition: 1.5s;
+}
+
+.cartaFondo::after{
+    content: "";
+    position: absolute;
+    height: 850px;
+    width: 100px;
+    background-image: linear-gradient(rgb(255, 251, 0), rgb(255, 251, 0));
+    margin-left: 200px;
+    animation: rotacion 3s linear infinite;
+    
+    
+}
+/*cada vez que el mouse pase por encima de la carta se visualice la animacion*/
+.perspective:hover .cartaFondo::after{
+    background-image: linear-gradient(rgb(131, 131, 131), rgb(114, 114, 114));
+}
+@keyframes rotacion {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+.fase2{
+    position: absolute;
+    background-image: url(img/gokuCirculo.png);
+    background-size: cover;
+    background-position: center;
+    height: 80px;
+    width: 80px;
+    z-index: 2;
+    top: 12px;
+    margin-left: 19px;
+    border-radius: 50%;
+}
+.fase2:hover {
+    background-image: url(img/gokuCirculo.gif);
+}
+.nombre{
+    position: absolute;
+    z-index: 2;
+    top: -6px;
+    margin-left: 110px;
+    color: rgb(255, 255, 255);
+}
+.nombre h2{
+    font-size: 42px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.nivel {
+    position: absolute;
+    z-index: 2;
+    top: 8px;
+    margin-left: 217px;
+    color: white;
+}
+.nivel h6{
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.power{
+    position: absolute;
+    z-index: 2;
+    top: -71px;
+    margin-left: 259px;
+    color: white;
+}
+.power h6{
+    font-size: 42px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.logo{
+    position: absolute;
+    background-image: url(img/Logo.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+    top: 18px;
+    right: 21px;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+.logo:hover{
+    border: 2px solid rgb(255, 136, 0);
+}
+.imgGoku{
+    height: 250px;
+    width: 435px;
+    background-image: url(Img/ImgGoku.png);
+    z-index: 2;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    margin-left: 25px;
+    top: 95px;
+    border: 8px solid rgb(255, 0, 0);
+}
+.cartaFondo:hover .imgGoku{
+    background-image: url(img/ImgGoku.gif);
+    border: 8px solid gray;
+}
+.cartaFondo:hover{
+    transform: rotateY(15deg);
+    transition: 1.5s;
+}
+.descripcion{
+    position: absolute;
+    z-index: 2;
+    top: 380px;
+    margin-left: 27px;
+    background-image: linear-gradient(rgb(255, 0, 0), rgb(255, 251, 0));
+    height: 28px;
+    width: 446px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+.descripcion h3{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+.Tecnica{
+    position: absolute;
+    z-index: 2;
+    top: 386px;
+    margin-left: 33px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(0, 0, 0);
+}
+.cartaFondo:hover .Tecnica{
+    color: rgb(255, 0, 0);
+}
+.habilidadDetalle{
+    position: absolute;
+    z-index: 2;
+    bottom: 184px;
+    margin-left: 37px;
+    margin-right: 19px;
+    font-size: 17px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    font-weight: bold;
+}
+.cartaFondo:hover .habilidadDetalle{
+    color: white;
+}
+hr{
+   border-color: rgb(255, 0, 0);
+   margin-right: 10px;
+}
+.Tecnica2{
+    position: absolute;
+    z-index: 2;
+    top: 466px;
+    margin-left: 33px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(0, 0, 0);
+}
+.cartaFondo:hover .Tecnica2{
+    color: rgb(255, 0, 0);
+}
+.habilidadDetalle2{
+    position: absolute;
+    z-index: 2;
+    bottom: 106px;
+    margin-left: 37px;
+    margin-right: 19px;
+    font-size: 17px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    font-weight: bold;
+}
+.cartaFondo:hover .habilidadDetalle2{
+    color: rgb(255, 255, 255);
+}
+.logo2{
+    position: absolute;
+    background-image: url(img/logo2.png);
+    background-size: cover;
+    background-position-x: center;
+    height: 40px;
+    width: 40px;
+    z-index: 2;
+    bottom: 88px;
+    margin-left: 35px;
+    border-radius: 50%;
+}
+.logo3{
+    position: absolute;
+    background-image: url(img/Logo5.png);
+    background-size: cover;
+    background-position-x: center;
+    height: 40px;
+    width: 40px;
+    z-index: 2;
+    bottom: 88px;
+    margin-left: 75px;
+    border-radius: 50%;
+}
+.logo4{
+    position: absolute;
+    background-image: url(img/logo3.png);
+    background-size: cover;
+    background-position-x: center;
+    height: 40px;
+    width: 40px;
+    z-index: 2;
+    bottom: 88px;
+    margin-left: 119px;
+    border-radius: 50%;
+}
+.logo5{
+    position: absolute;
+    background-image: url(img/logo4.png);
+    background-size: cover;
+    background-position-x: center;
+    height: 40px;
+    width: 40px;
+    z-index: 2;
+    bottom: 88px;
+    margin-left: 159px;
+    border-radius: 50%;
+}
+.descripcion2{
+    position: absolute;
+    z-index: 3;
+    bottom: 69px;
+    margin-left: 199px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(0, 0, 0);
+}
+.cartaFondo:hover .descripcion2 {
+    color: red;
+}
+.descripcion3{
+    position: absolute;
+    z-index: 3;
+    bottom: 69px;
+    margin-left: 405px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(0, 0, 0);
+}
+.cartaFondo:hover .descripcion3 {
+    color: red;
+}
+.descripcion4{
+    position: absolute;
+    z-index: 3;
+    bottom: 46px;
+    margin-left: 33px;
+    font-size: 13px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+}
+.cartaFondo:hover .descripcion4 {
+    color: rgb(255, 255, 255);
+}
+.debilidad{
+    position: absolute;
+    z-index: 3;
+    bottom: 30px;
+    margin-left: 33px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(rgb(255, 0, 0),rgb(197, 94, 94));
+    border-radius: 10px;
+    width: 120px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.debilidad:hover {
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgb(255, 0, 0),rgb(0, 0, 0));
+}
+.resistencia{
+    position: absolute;
+    z-index: 3;
+    bottom: 30px;
+    margin-left: 188px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(rgb(255, 0, 0),rgb(197, 94, 94));
+    border-radius: 10px;
+    width: 120px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.resistencia:hover {
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgb(255, 0, 0),rgb(0, 0, 0));
+}
+.miedo{
+    position: absolute;
+    z-index: 3;
+    bottom: 30px;
+    margin-left: 350px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(rgb(255, 0, 0),rgb(197, 94, 94));
+    border-radius: 10px;
+    width: 120px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.miedo:hover {
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgb(255, 0, 0),rgb(0, 0, 0));
+}
