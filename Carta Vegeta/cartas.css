@@ -1,0 +1,339 @@
+.vegeta{
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.perspective{
+    perspective: 1000px;
+}
+
+.cartaFondo{
+    height: 200px;
+    width: 150px;
+    background-color: rgb(0, 242, 255);
+    border-radius: 5%;
+    /*para que los elementos no salgan de la carta*/
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    box-shadow: 2px 2px 2px rgb(125, 125, 125);
+    cursor: pointer;
+}
+.cartaFondo::before{
+    content: "";
+    height: 190px;
+    width: 140px;
+    background-image: url(Img/blue.jpg);
+    background-size: cover;
+    border-radius: 5%;
+    position: absolute;
+    z-index: 1;
+    margin-left: calc((150px - 140px)/2);
+}
+.cartaFondo::after{
+    content: "";
+    position: absolute;
+    height: 350px;
+    width: 50px;
+    background-image: linear-gradient(rgb(34, 0, 255), rgb(37, 37, 116));
+    margin-left: calc((150px - 50px)/2);
+    animation: rotacion 2s linear infinite;
+    /*ocultar la animacion*/
+    visibility: hidden;
+}
+
+/*cada vez que el mouse pase por encima de la carta se visualice la animacion*/
+.perspective:hover .cartaFondo::after{
+    visibility: visible;
+}
+
+@keyframes rotacion {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+.fase2{
+    position: absolute;
+    background-image: url(Img/vegetaPng.png);
+    background-size: cover;
+    background-position: center;
+    height: 20px;
+    width: 20px;
+    z-index: 3;
+    bottom: 175px;
+    margin-left: 12px;
+    border-radius: 50%;
+
+}
+
+.fase2:hover{
+    background-image: url(Img/vegetaGif.gif);
+    border: 1px solid blue;
+}
+
+.nombre{
+    position: absolute;
+    z-index: 3;
+    bottom: 168px;
+    margin-left: 35px;
+    color: white;
+}
+.nombre h2{
+    font-size: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.nivel{
+    position: absolute;
+    z-index: 3;
+    bottom: 171px;
+    margin-left: 73px;
+    color: white;
+}
+
+.nivel h6{
+    font-size: 4px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.power{
+    position: absolute;
+    z-index: 3;
+    bottom: 154px;
+    margin-left: 101px;
+    color: white;
+}
+.power h6{
+    font-size: 4;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.fire{
+    position: absolute;
+    background-image: url(Img/simboloVegeta.jpg);
+    background-size: cover;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    bottom: 180px;
+    margin-left: 127px;
+    z-index: 3;
+    box-shadow: 1px 1px 1px rgb(99, 99, 99);
+}
+.fire:hover{
+    border: 1px solid red;
+}
+.imgVegeta{
+    height: 90px;
+    width: 120px;
+    background-image: url(Img/vegetaBlue.jpg!d);
+    z-index: 3;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    margin-left: calc((147px - 125px)/2);
+    top: 26px;
+    border: 4px solid blue;
+}  
+.imgVegeta:hover{
+    background-image: url(Img/vegeta-super-saiyan-blueGif.gif);
+}
+.cartaFondo:hover{
+    transform: rotateY(30deg);
+    transition: 0.3s;
+} 
+
+.cartaFondo2{
+    height: 190px;
+    width: 140px;
+    background-image: url(Img/fondos-gif.gif);
+    background-size: cover;
+    border-radius: 5%;
+    position: absolute;
+    z-index: 2;
+    margin-left: calc((150px - 140px)/2);
+    visibility: hidden;
+}
+.perspective:hover .cartaFondo2 {
+    visibility: visible;
+}
+.descripcion{
+    position: absolute;
+    z-index: 3;
+    bottom: 65px;
+    margin-left: 17px;
+    background-image: linear-gradient(rgb(0, 255, 251), rgb(30, 0, 255));
+    height: 8px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+.descripcion h3{
+    font-size: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+.Tecnica{
+    position: absolute;
+    z-index: 3;
+    bottom: 49px;
+    margin-left: 13px;
+    font-size: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(204, 255, 0);
+
+}
+.habilidadDetalle{
+    position: absolute;
+    z-index: 3;
+    bottom: 33px;
+    margin-left: 13px;
+    font-size: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+}
+hr{
+    border-color: rgb(217, 255, 0);
+}
+.fire2{
+    position: absolute;
+    background-image: url(Img/galick\ ho.jpg.crdownload);
+    background-size: cover;
+    background-position-x: center;
+    height: 8px;
+    width: 8px;
+    z-index: 3;
+    bottom: 31px;
+    margin-left: 13px;
+    border-radius: 50%;
+}
+.fire3{
+    position: absolute;
+    background-image: url(Img/fire2.jpg);
+    background-size: cover;
+    background-position-x: center;
+    height: 8px;
+    width: 8px;
+    z-index: 3;
+    bottom: 31px;
+    margin-left: 23px;
+    border-radius: 50%;
+}
+.fire4{
+    position: absolute;
+    background-image: url(Img/fire3.jpg);
+    background-size: cover;
+    background-position-x: center;
+    height: 8px;
+    width: 8px;
+    z-index: 3;
+    bottom: 31px;
+    margin-left: 33px;
+    border-radius: 50%;
+}
+.fire5{
+    position: absolute;
+    background-image: url(Img/fire4.jpg);
+    background-size: cover;
+    background-position-x: center;
+    height: 8px;
+    width: 8px;
+    z-index: 3;
+    bottom: 31px;
+    margin-left: 43px;
+    border-radius: 50%;
+}
+.descripcion2{
+    position: absolute;
+    z-index: 3;
+    bottom: 24px;
+    margin-left: 53px;
+    font-size: 6px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(255, 255, 0);
+
+}
+.descripcion3{
+    position: absolute;
+    z-index: 3;
+    bottom: 24px;
+    margin-left: 120px;
+    font-size: 6px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(234, 255, 0);
+}
+.descripcion4{
+    position: absolute;
+    z-index: 3;
+    bottom: 16px;
+    margin-left: 13px;
+    font-size: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+}
+.debilidad{
+    position: absolute;
+    z-index: 3;
+    bottom: 9px;
+    margin-left: 14px;
+    font-size: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(rgb(123, 248, 255),rgb(0, 4, 255));
+    border-radius: 10px;
+    width: 35px;
+    height: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.debilidad:hover{
+    background-image: linear-gradient(rgb(0, 0, 0),rgb(0, 4, 255));
+    color: white;
+}
+.resistencia{
+    position: absolute;
+    z-index: 3;
+    bottom: 9px;
+    margin-left: 56px;
+    font-size: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(rgb(123, 248, 255),rgb(0, 4, 255));
+    border-radius: 10px;
+    width: 35px;
+    height: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.resistencia:hover{
+    background-image: linear-gradient(rgb(0, 0, 0),rgb(0, 4, 255));
+    color: white;
+}
+.retirada{
+        position: absolute;
+        z-index: 3;
+        bottom: 9px;
+        margin-left: 97px;
+        font-size: 4px;
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(0, 0, 0);
+        background-image: linear-gradient(rgb(123, 248, 255),rgb(0, 4, 255));
+        border-radius: 10px;
+        width: 35px;
+        height: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+}
+.retirada:hover{
+    background-image: linear-gradient(rgb(0, 0, 0),rgb(0, 4, 255));
+    color: white;
+}
