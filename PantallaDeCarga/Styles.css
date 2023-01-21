@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 1.3rem;
+}
+.conteiner{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(50, 50, 50);
+}
+.circulo1{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.esferas{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(var(--rotation));
+    filter: drop-shadow(0px 0px 5px rgb(0, 255, 200));
+}
+.circulo{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: rgb(38, 255, 0);
+    position: absolute;
+    top: 0;
+    animation: efecto 1.9s linear infinite;
+    animation-delay: var(--delay);
+}
+h3{
+    color: rgb(0, 255, 34);
+    filter: drop-shadow(0px 0px 5px rgb(0, 255, 200));
+    transform: rotate(var(--rotation));
+    --rotation:0deg;
+}
+
+
+@keyframes efecto {
+    0%{
+        transform: scale(1);
+    }50%{
+        transform: scale(0.2);
+    }100%{
+        transform: scale(1);
+    }
+}
+
+#esfera1 { --rotation:0deg; --delay:0.1s}
+#esfera2 {--rotation:30deg; --delay:0.2s}
+#esfera3 { --rotation:60deg; --delay:0.3s}
+#esfera4 { --rotation:90deg; --delay:0.4s}
+#esfera5 { --rotation:120deg; --delay:0.5s}
+#esfera6 { --rotation:150deg; --delay:0.6s}
+#esfera7 { --rotation:180deg; --delay:0.7s}
+#esfera8 { --rotation:210deg; --delay:0.8s}
+#esfera9 { --rotation:240deg; --delay:0.9s}
+#esfera10 { --rotation:270deg; --delay:0.10s}
+#esfera11 { --rotation:300deg; --delay:0.11s}
+#esfera12 { --rotation:330deg; --delay:0.12s}
