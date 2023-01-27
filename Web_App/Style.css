@@ -1,0 +1,90 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.separacion{
+    padding: 100px 0;
+}
+.Logotipo{
+    width: 100px;
+}
+.icono-redes-header{
+    width: 20px;
+    margin: 10px 3px;
+}
+.banner-video{
+    background-image: url(images/home/video-bg.jpg);
+    padding: 200px 0;
+    position: relative;
+    text-align: center;
+
+}
+.carousel-caption{
+    position: absolute;
+    top: 40%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgb(0, 255, 247);
+    text-align: left;
+}
+.btn-light{
+    color: rgb(0, 255, 247);
+    background-color: transparent;
+    border-color: aqua;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+.play{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    align-items: center;
+}
+.sombras{
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 15px 1px black;
+}
+footer{
+    background-color: rgb(37, 37, 37);
+    padding: 100px 0;
+    text-align: center;
+}
+footer .Logotipo-footer{
+    width: 100px;
+    margin-bottom: 20px;
+}
+footer p{
+    color: rgb(117, 117, 117);
+    font-style: italic;
+    font-size: 12px;
+}
+/*Pagina somos*/
+.cabecera-somos{
+    padding: 150px 0 100px 0;
+    background-image: url(images/somos/slider-interior.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.textoBlanco{
+    color: #fff;
+}
+.banerSomos{
+    background-image: url(images/somos/somos-equipo.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 200px 0;
+    text-align: center;
+}
