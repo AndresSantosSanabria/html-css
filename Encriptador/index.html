@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <h2 class="titulo">Encriptador</h2>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="caja">
+                    <textarea id="encriptar" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                    <textarea readonly id="solucion" cols="30" rows="10" placeholder="No se encontro ningun texto"></textarea>
+                    <p>Solo letras en minusculas y sin acentos</p>
+                    <div class="btn">
+                        <button class="Encriptar" onclick="btnEncriptar()">Encriptar</button>
+                        <button class="Desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                        <button class="Copy" onclick="Copy()">Copiar</button>
+                    </div>
+                    <small>Pagina elaborada por Fabio Andres Santos Sanabria</small>
+                    <br>
+                    <small>&#169 Copyright 2023</small>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="Script.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+body{
+    background-color: black;
+}
+.titulo{
+    color: rgb(168, 167, 167);
+    text-align: center;
+    
+}
+.container{
+    margin-left: 10em;
+    margin-top: 30px;
+    width: 80%;
+    height: 70%;
+    border-radius: 25px;
+}
+.caja{
+    width: 100%;
+    height: 40em;
+    background-color: rgb(168, 167, 167);
+    border-radius: 25px;
+}
+
+#encriptar{
+    margin-top: 3em;
+    margin-left: 3em;
+    width: 60%;
+    height:60%;
+    background-color: rgb(157, 157, 157);
+    border: none;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 19px;
+    resize: none;
+}
+#solucion{
+    width: 29%;
+    height: 60%;
+    margin-left:10px;
+    background-color: rgb(157, 157, 157);
+    border: none;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+    resize: none;
+    background-image: url(Img/ImagenResultado.png);
+    background-repeat: no-repeat;
+    background-position: 50px;
+}
+#solucion:focus{
+    outline: none;
+}
+#solucion::selection{
+    background-color: transparent;
+}
+
+.caja p{
+    margin-left: 19em;
+    font-weight: bold;
+    font-style: italic;
+}
+.btn{
+    margin-left: 18%;
+    margin-top: 1%;
+}
+.Encriptar {
+	background-color:#006aff;
+	border-radius:28px;
+	border:1px solid #0400ff;
+	display:inline-block;
+	cursor:pointer;
+	color:#050505;
+	font-style: italic;
+	font-size:15px;
+	padding:10px 25px;
+	text-decoration:none;
+    font-weight: bold;
+}
+.Desencriptar{
+    margin-left: 10em;
+    background-color:#006aff;
+	border-radius:28px;
+	border:1px solid #0400ff;
+	display:inline-block;
+	cursor:pointer;
+	color:#050505;
+	font-style: italic;
+	font-size:15px;
+	padding:10px 25px;
+	text-decoration:none;
+    font-weight: bold;
+}
+.Copy{
+    margin-left: 21em;
+    margin-bottom: 4em;
+    background-color:#006aff;
+	border-radius:28px;
+	border:1px solid #0400ff;
+	display:inline-block;
+	cursor:pointer;
+	color:#050505;
+	font-style: italic;
+	font-size:15px;
+	padding:10px 25px;
+	text-decoration:none;
+    font-weight: bold;
+}
+
+.myButton:hover {
+	background-color:#0095ff;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+small{
+    margin-left: 29em;
+    
+}
